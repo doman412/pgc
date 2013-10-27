@@ -27,8 +27,8 @@ $(function() {
     console.log('function!!');
     document.addEventListener("backbutton", function(event){
         app.router.backPressed(event)
-        console.log('back');
-        alert('back');
+//        console.log('back');
+//        alert('back');
     }, false);
 
 });
