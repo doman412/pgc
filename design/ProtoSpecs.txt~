@@ -1,0 +1,30 @@
+X-Border 0.9.0 (Proto)
+Start Date: Sunday, 4th of August 2013
+Estimated End Date: Sunday 11th of August 2013
+
+1. Deliverables
+
+   Simple Cross-Platform application using PhoneGap. 
+   	  -UI categories being pulled from server(MongoDB?), for UI reference see protoStoryBoard.
+	  -Client creation back to DB, preferences on phone?
+
+   Simple Website for creating Subscribers and submiting Ads.
+
+   Start of a well designed RESTful API 
+   	 -create customer, getServices, etc..
+
+   	 
+2. Functionality 
+
+   As a customer:
+      
+      Be able to edit my preferences to see select ads, change geolocation radius, update frequency on ad pulls.
+
+      Be able to have ads redirect me when selected.
+
+
+   As a subscriber:
+
+      Be able to sign up for a subscriber account.
+
+      Be able to 

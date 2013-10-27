@@ -1,0 +1,20 @@
+Small justification to using PhoneGap API
+
+YAY
+
+1. Write "once" deploy on all of our targets. 
+
+2. All deliverables will have a consistent UI and feel.
+
+3. Has Geolocation support.
+
+4. Licensed under the Apache license, ?? I need to look up more info on this.
+
+
+NAY
+
+1. Fuck CSS
+
+2. Anyone have experience with JS, CSS3, HTML5?!
+
+3. Performance issues?? probably not in an app like this.

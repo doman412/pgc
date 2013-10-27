@@ -1,0 +1,31 @@
+X-Border 0.9.0 (Proto)
+Start Date: Sunday, 4th of August 2013
+Estimated End Date: Sunday 11th of August 2013
+
+1. Deliverables
+
+   Web page to create new Subscribers 
+   Web page to login to a Subscriber account 
+   Web page that allows a Subscriber to create new Ads
+
+   App that follows the current Dia Story Board
+   App that can pull ads using geolocation
+
+   	 
+2. Functionality 
+
+   As a customer:
+      
+      Be able to edit my preferences to see select ads, change geolocation search radius, update frequency on ad pulls.
+
+      Be able to have ads redirect me when selected.
+
+
+   As a subscriber:
+
+      Be able to sign up for a subscriber account.
+
+      Be able to login to my subscriber account.
+
+      Be able to create an ad.
+      

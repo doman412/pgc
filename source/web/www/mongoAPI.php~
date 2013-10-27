@@ -1,0 +1,30 @@
+<?php 
+
+//php API to interface with the DB
+
+
+//createSubscriber returns Subscriber ID on success, on fail returns 0
+function createSubscriber($firstName, $lastName, $email, $password)
+{
+    //First Encrypt 
+    echo $firstName; echo "\n"; echo "\n";
+    $fisrstNameEncrypt = encrypt($firstName);
+    echo $firstNameEncrypt;
+}
+
+
+
+function encrypt($plainText)
+{
+    
+    $strong = true;
+    $key_size = mcrypt_get_key_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CFB);
+    $encryption_key = openssl_random_pseudo_bytes($key_size, $strong);
+    $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CFB);
+    $iv = mcrypt_create_iv($iv_size, MCRYPT_DEV_URANDOM); // 16 bytes output
+    
+    $encryptText = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $encryption_key, $name, MCRYPT_MODE_CFB, $iv);    
+    return $encryptText;
+
+}
+
