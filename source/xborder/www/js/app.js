@@ -83,8 +83,8 @@ function splash(){
     show();
 }
 
-$(document).on("ready", splash);
-//$(document).on("deviceready", splash);
+//$(document).on("ready", splash);
+$(document).on("deviceready", splash); 
 
 
 

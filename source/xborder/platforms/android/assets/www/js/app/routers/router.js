@@ -93,7 +93,7 @@ app.routers.AppRouter = Backbone.Router.extend({
 
     backPressed:function(event) {
         console.log("back pressed: "+event);
-        alert(event);
+        alert("back 1");
     }
 
 });

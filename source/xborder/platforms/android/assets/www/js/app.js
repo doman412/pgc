@@ -84,7 +84,7 @@ function splash(){
 }
 
 //$(document).on("ready", splash);
-$(document).on("deviceready", splash);
+$(document).on("deviceready", splash); 
 
 
 
