@@ -1,0 +1,20 @@
+.topcoat-icon--back {
+    background: url("images/back_light.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.refresh-icon {
+    background: url("../topcoat/img/refresh-grey.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.settings-icon {
+    background: url("../topcoat/img/settings_light.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}

@@ -1,0 +1,28 @@
+.topcoat-icon--back {
+    background: url("images/back_dark.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.refresh-icon {
+    background: url("../topcoat/img/refresh.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.settings-icon {
+    background: url("../topcoat/img/settings.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.location-icon {
+    background: url("../css/images/location.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    border:none;
+}
