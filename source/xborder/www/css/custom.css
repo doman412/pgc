@@ -24,6 +24,7 @@ img.subscriberPageImage {
     vertical-align:bottom;
     padding-right: 6px;
     float:right;
+    display:inline-block;
 }
 
 .adModelViewDistance{
@@ -35,24 +36,25 @@ img.subscriberPageImage {
     margin:0px;
     margin-left:15px;
     color:#585858;
+    display:inline-block;
 }
 
 .adModelViewLocation {
 
-    height:32px;
-    width:32px;
+    height:auto;
+    width:auto;
     margin:0px;
-    
-    
-    
-/*
-    float:right;
-    padding:8px;
-    margin:0px;
-    margin-right:6px;
-*/
+    margin-bottom:1px;
+    text-align:right;
     padding:0px;
     padding-right:6px;
+    display:inline-block;
+    vertical-align:top;
+/*    float:right;*/
+}
+
+.adModelViewBottomRow{
+    margin-bottom:4px;
 }
 
 .adModelViewLocationTableCell {
@@ -62,10 +64,18 @@ img.subscriberPageImage {
 
 .adModelViewContent {
     padding-left: 6px;
+    display:inline-block;
+    width:55%;
+    vertical-align:top;
 }
 
 td#adModelViewImageRow {
     width:65px;
+}
+
+.adModelViewImageRow {
+    width:auto;
+    display:inline-block;
 }
 
 #ad {
@@ -93,6 +103,10 @@ td#adModelViewImageRow {
     margin:0px;
 }
 */
+
+.topcoat-list {
+    height:inherit;   
+}
 
 .topcoat-list__header {
     color:#3879D9;
@@ -155,10 +169,6 @@ img.splash {
     padding:0px;
     width:100%;
     height: auto;
-}
-
-.topcoat-list__container p {
-    color:#000000
 }
 
 .topcoat-navigation-bar__title {
@@ -256,7 +266,7 @@ img.splash {
 #extra.topcoat-list__container {
     overflow-y:auto;
     position:absolute;
-    top: 96px;
+    top: 98px;
     left:0px;
     right:0px;
     bottom:0px;

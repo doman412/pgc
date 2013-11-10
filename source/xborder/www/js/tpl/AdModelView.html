@@ -1,3 +1,4 @@
+<!--
 <div style="text-align: left;">
         <table>
             <tr>
@@ -14,17 +15,9 @@
                     </div>
                 </td>
                 <td class="adModelViewLocation">
-<!--
-                    <div>
-                        <img class="adModelViewLocation" src="../../css/images/location.svg">
-                        <span class"topcoat-icon location-icon"></span>
-                    </div>
--->
-<!--                    <div class="topcoat-navigation-bar__item">-->
                         <div id="gotoMap" class="topcoat-icon-button">
                             <button class=" topcoat-icon location-icon"></button>
                         </div>
-<!--                    </div>-->
                 </td>
             </tr>
             <tr>
@@ -33,14 +26,42 @@
                 </td>
                 <td>
                     <div class="adModelViewRedeem">
-                        <!--<a href="#">-->
-                            <!--<div class="redeem-button"></div>-->
-                        <!--</a>-->
                         <button class="topcoat-button--cta redeem-button">Redeem</button>
                     </div>
                 </td>
 
             </tr>
         </table>
-    <!--</a>-->
+</div>
+-->
+
+<div id="adCanvas">
+
+    <div id="adModelViewImageRow" class="adModelViewImageRow">
+        <img class="adModelView" src="<%= imgUrl %>">
+    </div>
+    
+    <div class="adModelViewContent">
+        <div class="adModelViewTitle"><%= title %></div>
+        <div class="adModelViewDescription"><%= description %></div>
+    </div>
+    <div class="adModelViewLocation">
+        <div id="gotoMap" class="topcoat-icon-button">
+            <button class=" topcoat-icon location-icon"></button>
+        </div>
+    </div>
+    <div class="adModelViewBottomRow">
+        <div class="adModelViewDistance"><%=clubTitle%> ~2mi</div>
+        <div class="adModelViewRedeem">
+            <button class="topcoat-button--cta redeem-button">Redeem</button>
+        </div>
+    </div>
+    
+    <!--
+    <div style="float:left;">
+        
+        
+        
+    </div>
+    -->
 </div>

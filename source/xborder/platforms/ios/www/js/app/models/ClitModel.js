@@ -38,7 +38,7 @@ app.views.ClitModelView = Backbone.View.extend({
     
     events: {
         "click #gotoMap":"gotoMap",
-        "click table":"gotoSubscriberPage"
+        "click #adCanvas":"gotoSubscriberPage"
 
     },
     
@@ -67,8 +67,10 @@ app.views.ClitModelView = Backbone.View.extend({
         this.$el.html(this.template(this.model.attributes));
 
         $('button.topcoat-button--cta',this.el).remove();
-        $('td#adModelViewImageRow',this.el).remove();
+        $('.adModelViewImageRow',this.el).remove();
         $('.adModelViewTitle',this.el).remove();
+        
+        $('.adModelViewContent',this.el).css('width',$(window).width()-(52+25));
         
         return this;
     },
@@ -79,7 +81,7 @@ app.views.ClitModelView = Backbone.View.extend({
         if(device.platform == 'Android'){
             window.location = "geo:0,0?q="+this.model.get('clubAddress');
         } else if(device.platform == 'iOS'){
-            window.location = "maps:"+this.model.get('clubAddress');
+            window.location = "maps:?daddr="+this.model.get('clubAddress');
             
         }
         return false;

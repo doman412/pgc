@@ -11,6 +11,8 @@
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="EnableViewportScale" value="false"/>
     
     <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="true" />

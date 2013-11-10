@@ -119,26 +119,31 @@ app.views.HomeView = Backbone.View.extend({
 	
     render: function () {
         this.delegateEvents();
-        console.log("render");
         this.$el.html(this.te({title:"Clitter: "+app.city.get('name'),city:app.city.get('name')}));
         
 		var self = this;
         
         if(this.filterStatus == 'distance'){
-            $('#distance',this.el).css('color','#3879D9');
-//            old color #454545
+            $('#distance',this.el).css('color','#fff');
+//            old color #454545 / #3879D9
             _(this.col.models).each(function(ad){
                 self.renderAd(ad);
             },this);
         } else if(this.filterStatus == 'clits') {
-            $('#clits',this.el).css('color','#3879D9');
+            $('#clits',this.el).css('color','#fff');
             _(this.clitCol.models).each(function(clit){
                 self.renderClit(clit);
             },this);
         } else if(this.filterStatus == 'deals') {
-            $('#deals',this.el).css('color','#3879D9');
+            $('#deals',this.el).css('color','#fff');
         }
         
+        $('#homeViewList.topcoat-list',this.el).css('height', parseInt($('body').css('height'),10) - parseInt($('#extra.topcoat-list__container',this.el).css('top'),10));
+        console.log('list: ',$('#homeViewList.topcoat-list',this.el).css('height'));
+        if(device.platform == 'iOS'){
+            $('#homeViewList.topcoat-list',this.el).css('height','+='+$('#homeViewHeader',this.el).css('height'));
+        }
+        console.log('list: ',$(window).height());
         
         return this;
     },
