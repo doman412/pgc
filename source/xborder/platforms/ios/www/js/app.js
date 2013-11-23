@@ -94,7 +94,7 @@ function splash(){
     var taco;
     var show = function(){
         myDiv.style.display = "block";
-        taco = setInterval(hide, 2500);
+        taco = setInterval(hide, 2800);
 //        taco = setInterval(hide, 1);
         //setTimeout(hide(), 5000);  // 5 seconds
         

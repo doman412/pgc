@@ -282,8 +282,27 @@ img.splash {
 }
 */
 
+.share-icon {
+    background: url("../css/images/share.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    border:none;
+}
 
+.heart-icon {
+    background: url("../css/images/heart.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    border:none;
+}
 
-
-
+.like-icon {
+    background: url("../css/images/like.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    border:none;
+}
 

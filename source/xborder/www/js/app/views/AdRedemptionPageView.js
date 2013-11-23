@@ -28,9 +28,9 @@ app.views.AdRedemptionPageView = Backbone.View.extend({
         this.$el.html(this.template());
 
 //        console.log(this.model);
+        $('body').css('background-color','#000000');
 
-
-        if(this.model.get('type')=='qr'){
+        if(this.model.get('type')=='QR Code'){
             var qr = new app.models.QRModel();
             qr.set('domain',app.domain);
             qr.set('url',"/api/ads/redeem/");
@@ -40,7 +40,7 @@ app.views.AdRedemptionPageView = Backbone.View.extend({
 
 //            console.log(qr);
             this.$el.append(new app.views.QRModelView({model:qr}).render().el);
-        } else if(this.model.get('type')=='doorman'){
+        } else if(this.model.get('type')=='Door man'){
             var dm = new app.models.DoormanModel();
             dm.set('ad',this.model);
 

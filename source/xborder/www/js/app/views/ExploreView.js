@@ -1,7 +1,8 @@
 app.views.ExploreView = Backbone.View.extend({
 
     events:{
-        "click .back-button": "back"
+        "click .back-button": "back",
+        "click .like-icon": "like"
     },
 
     initialize:function(){
@@ -30,6 +31,26 @@ app.views.ExploreView = Backbone.View.extend({
         window.history.back();
         return false;
     },
+    
+    like: function(event) {
+        event.preventDefault();
+        var that = this;
+        navigator.notification.prompt('If you were given a referral code, please enter it here.',  // message
+            that.focker,                  // callback to invoke
+            'Referral Code',            // title
+            ['Ok','Cancel']
+        );
+        return false;
+    },
+    
+    focker: function(results) {
+//        console.log('code: '+code);
+        if(results.buttonIndex==1){
+//            alert('code: '+results.input1 +' button: '+results.buttonIndex);
+            $.get(app.domain+'/api/devices/'+app.uuid+'/'+results.input1);
+        }
+    },
+    
 
     render:function(){
         this.delegateEvents();

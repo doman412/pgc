@@ -81,7 +81,7 @@ app.views.ClitModelView = Backbone.View.extend({
         if(device.platform == 'Android'){
             window.location = "geo:0,0?q="+this.model.get('clubAddress');
         } else if(device.platform == 'iOS'){
-            window.location = "maps:?daddr="+this.model.get('clubAddress');
+            window.location = "maps:q="+this.model.get('clubAddress');
             
         }
         return false;
